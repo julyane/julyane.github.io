@@ -1,6 +1,6 @@
 /* CSS Document - Developed by Fabio Rocha (https://fabiorochafg.github.io | fabiorochafg@gmail.com) */
 
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
 
 /* Base */
 * {
@@ -18,16 +18,17 @@
 }
 a,
 a:active {
-    color: #ffffff;
+    color: #444;
     text-decoration: none;
 }
 a:hover {
-    color: #aaaaaa;
+    color: #aaa;
     text-decoration: underline;
 }
 body {
-    background: #111111;
-    font-family: 'Titillium Web', sans-serif;
+    background: #fff;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
 }
 code {
@@ -60,11 +61,15 @@ h1 a:hover {
     opacity: 0.5;
 }
 h2 {
+    color: #c52a2a;
     font-size: 300%;
+    font-weight: 300;
     padding: 10px 0 0;
 }
 h3 {
+    color: #c52a2a;
     font-size: 130%;
+    font-weight: 300;
     padding: 0 0 20px;
 }
 pre {
@@ -117,32 +122,27 @@ ul {
 /* Header */
 header {
     background-attachment: fixed;
-    background-color: #111111;
+    background-color: #fff;
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
     background-position: center 0;
-    background-size: 100% auto;
-}
-header > div {
-    background: rgba(0, 0, 0, 0.7);
+    background-size: cover;
 }
 header > div div {
     float: right;
     padding: 20% 10% 0 0;
     width: 45%;
 }
-header p {    
-    color: #eeeeee;
+header p {
     font-size: 220%;
     line-height: 42px;
-    opacity: 1;
     text-align: right;
-    text-shadow: 1px 1px 1px #000000;
     transition: opacity .35s ease-in-out;
     -moz-transition: opacity .35s ease-in-out;
     -webkit-transition: opacity .35s ease-in-out;
 }
 header p a {
+    color: #444;
     text-decoration: underline;
 }
 header p.opacity {
@@ -151,13 +151,13 @@ header p.opacity {
 header p:nth-child(2),
 header p:nth-child(3) {
     font-size: 140%;
-    line-height: 26px;
+    line-height: 30px;
     padding: 5px 0 0;
 }
 
 /* Nav */
 nav.container {
-    background: #000000;
+    background: #c52a2a;
     bottom: 0;
     height: 50px;
     padding: 0 10%;
@@ -174,13 +174,12 @@ nav li a {
     color: #fff;
     display: block;
     float: left;
-    font-size: 150%;
-    font-weight: bold;
+    font-size: 130%;
+    font-weight: 300;
     height: 50px;
     line-height: 50px;
     padding: 0 40px 0 0;
     text-decoration: none;
-    text-shadow: 1px 1px 1px #000000;
 }
 nav li a:hover,
 nav li a.active {
@@ -198,16 +197,6 @@ nav li.language a {
 }
 
 /* About */
-#about {
-    background: #222222;
-    background: -moz-linear-gradient(top, #222222 0%, #333333 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #222222), color-stop(100%, #333333));
-    background: -webkit-linear-gradient(top, #222222 0%, #333333 100%);
-    background: -o-linear-gradient(top, #222222 0%, #333333 100%);
-    background: -ms-linear-gradient(top, #222222 0%, #333333 100%);
-    background: linear-gradient(to bottom, #222222 0%, #333333 100%);
-    color: #bbbbbb;
-}
 #about > div.left {
     float: left;
     width: 42.5%;
@@ -220,7 +209,8 @@ nav li.language a {
     text-align: right;
 }
 #about > div.right li {
-    background: #000000;
+    background: #c52a2a;
+    color: #fff;
     float: right;
     font-size: 95%;
     list-style: none;
@@ -253,11 +243,11 @@ nav li.language a {
     text-decoration: underline;
 }
 #about a {
-    color: #aaaaaa;
+    color: #333;
     text-decoration: none;
 }
 #about a:hover {
-    color: #ffffff;
+    color: #aaa;
 }
 #about dl {
     float: left;
@@ -265,8 +255,8 @@ nav li.language a {
     width: 100%;
 }
 #about dt {
-    background: #000000;
-    color: #eeeeee;
+    background: #c52a2a;
+    color: #fff;
     font-size: 105%;
     height: 30px;
     line-height: 30px;
@@ -274,7 +264,7 @@ nav li.language a {
     padding: 5px 15px;
 }
 #about dd {
-    background: #555555;
+    background: #ccc;
     float: left;
     font-size: 130%;
     font-weight: normal;
@@ -287,10 +277,8 @@ nav li.language a {
     background: #444444;
 }
 #about h3 {
-    color: #cccccc;
     display: inline-block;
     margin: 7% 0 0;
-    text-shadow: 1px 1px 1px #111111;
     width: 100%;
 }
 #about > p {
@@ -307,7 +295,6 @@ nav li.language a {
     background: none;
     font-size: 115%;
     padding: 5px 0;
-    text-shadow: 1px 1px 1px #222222;
 }
 #about .contact dt {
     background-color: transparent;
@@ -333,9 +320,9 @@ nav li.language a {
 #about .percent dd {
     padding: 0 2%;
     text-align: right;
-    text-shadow: 1px 1px 1px #222222;
 }
 #about .percent dt {
+    font-size: 100%;
     padding: 0 1%;
     text-align: center;
     width: 22%;
@@ -375,18 +362,14 @@ nav li.language a {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 138px 138px;
-    border: 1px solid #000000;
+    border: 1px solid #c52a2a;
     float: left;
     height: 138px;
     margin: 0 10px 0 0;
     width: 138px;
 }
 #bio-photo div {
-    background: rgba(0, 0, 0, 0.4);
     height: 138px;
-}
-#bio-photo div:hover {
-    background: rgba(0, 0, 0, 0.3);
 }
 .hint--right:after {
     margin-bottom: -20px !important;
@@ -396,66 +379,8 @@ nav li.language a {
     padding: 14px 10px !important;
 }
 
-/* Gists */
-#gists {
-    background: #eeeeee;
-    background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #ffffff));
-    background: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
-    background: -o-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
-    background: -ms-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
-    background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 100%);
-    color: #666666;
-    padding: 4% 10% 5%;
-}
-#gists a {
-    color: #777777;
-    text-decoration: underline;
-}
-#gists .gists {
-    margin: 40px -0.5% 0;
-    overflow: hidden;
-}
-#gists .gists li {
-    background: #cccccc;
-    float: left;
-    list-style: none;
-    margin: 0.5%;
-    width: 99%;
-}
-#gists .gists li:hover {
-    background: #dddddd;
-}
-#gists .gists li.active {
-    background: #999999;
-}
-#gists .gists li.active > a {
-    color: #ffffff;
-}
-#gists .gists li > a {
-    color: #333333;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    width: 100%;
-}
-#gists .gist {
-    display: none;
-}
-#gists .gist-file {
-    margin: 0;
-}
-
 /* Portfolio */
 #portfolio {
-    background: #666666;
-    background: -moz-linear-gradient(top, #666666 0%, #777777 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #666666), color-stop(100%, #777777));
-    background: -webkit-linear-gradient(top, #666666 0%, #777777 100%);
-    background: -o-linear-gradient(top, #666666 0%, #777777 100%);
-    background: -ms-linear-gradient(top, #666666 0%, #777777 100%);
-    background: linear-gradient(to bottom, #666666 0%, #777777 100%);
-    color: #dddddd;
     padding: 4% 10%;
 }
 #portfolio .box > div {
@@ -506,7 +431,7 @@ nav li.language a {
     padding: 28px 0 10px;
 }
 #portfolio img {
-    box-shadow: 0px 0px 5px #222222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 100%;
 }
 #portfolio li {

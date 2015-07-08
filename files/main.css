@@ -1,0 +1,695 @@
+/* CSS Document - Developed by Fabio Rocha (https://fabiorochafg.github.io | fabiorochafg@gmail.com) */
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700);
+
+/* Base */
+* {
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+}
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a,
+a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: #aaaaaa;
+    text-decoration: underline;
+}
+body {
+    background: #111111;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100%;
+}
+code {
+    clear: left;
+    display: block;
+    font-size: 95%;
+    padding: 0 0 0 60px;
+}
+dd {
+    font-weight: bold;
+    padding: 0 0 2px;
+}
+dt {
+    clear: left;
+    float: left;
+    margin: 0 5px 0 0;
+}
+h1 {
+    float: left;
+    padding: 4% 10%;
+}
+h1 a {
+    background: url(../images/logo.png) no-repeat -6px 0;
+    display: block;
+    height: 160px;
+    text-indent: -9000px;
+    width: 160px;
+}
+h1 a:hover {
+    opacity: 0.5;
+}
+h2 {
+    font-size: 300%;
+    padding: 10px 0 0;
+}
+h3 {
+    font-size: 130%;
+    padding: 0 0 20px;
+}
+pre {
+    font-size: 85% !important;
+}
+ul {
+    line-height: 1.5em;
+}
+
+/* Layout */
+#wrapper {
+    position: relative;
+    width: 100%;
+}
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 4% 10% 6%;
+    width: 100%;
+}
+.box {
+    margin: 0 -2%;
+    overflow: hidden;
+    width: 104%;
+}
+.box > div {
+    float: left;
+    margin: 2%;
+    width: 96%;
+}
+.box .box12 {
+    width: 96%;
+}
+.box .box6 {
+    width: 46%;
+}
+.box .box4 {
+    width: 29.3333%;
+}
+.box .box3 {
+    width: 21%;
+}
+.box .box2 {
+    width: 12.6666%;
+}
+.box .box1 {
+    width: 4.3333%;
+}
+
+/* Header */
+header {
+    background-attachment: fixed;
+    background-color: #111111;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100% auto;
+}
+header > div {
+    background: rgba(0, 0, 0, 0.7);
+}
+header > div div {
+    float: right;
+    padding: 20% 10% 0 0;
+    width: 45%;
+}
+header p {    
+    color: #eeeeee;
+    font-size: 220%;
+    line-height: 42px;
+    opacity: 1;
+    text-align: right;
+    text-shadow: 1px 1px 1px #000000;
+    transition: opacity .35s ease-in-out;
+    -moz-transition: opacity .35s ease-in-out;
+    -webkit-transition: opacity .35s ease-in-out;
+}
+header p a {
+    text-decoration: underline;
+}
+header p.opacity {
+    opacity: 0.3;
+}
+header p:nth-child(2),
+header p:nth-child(3) {
+    font-size: 140%;
+    line-height: 26px;
+    padding: 5px 0 0;
+}
+
+/* Nav */
+nav.container {
+    background: #000000;
+    bottom: 0;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    z-index: 1;
+}
+    nav.menufixo {
+        top: 0 !important;
+    }
+nav li {
+    list-style: none;
+}
+nav li a {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 150%;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 40px 0 0;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000000;
+}
+nav li a:hover,
+nav li a.active {
+    color: #999999;
+    text-decoration: none;
+}
+nav li.language {
+    float: right;
+}
+nav li.language a {
+    color: #aaaaaa;
+    font-size: 85%;
+    font-weight: normal;
+    padding: 0;
+}
+
+/* About */
+#about {
+    background: #222222;
+    background: -moz-linear-gradient(top, #222222 0%, #333333 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #222222), color-stop(100%, #333333));
+    background: -webkit-linear-gradient(top, #222222 0%, #333333 100%);
+    background: -o-linear-gradient(top, #222222 0%, #333333 100%);
+    background: -ms-linear-gradient(top, #222222 0%, #333333 100%);
+    background: linear-gradient(to bottom, #222222 0%, #333333 100%);
+    color: #bbbbbb;
+}
+#about > div.left {
+    float: left;
+    width: 42.5%;
+}
+#about > div.right {
+    float: right;
+    width: 52.5%;
+}
+#about > div.right h3 {
+    text-align: right;
+}
+#about > div.right li {
+    background: #000000;
+    float: right;
+    font-size: 95%;
+    list-style: none;
+    margin: 0 0 5px 5px;
+    padding: 3px 6px;
+}
+#about > div.right p {
+    float: right;
+    font-size: 160%;
+    padding: 0 0 5px;
+    text-align: right;
+}
+#about > div.right p:nth-child(2) {
+    font-size: 145%;
+    width: 90%;
+}
+#about > div.right p:nth-child(3) {
+    font-size: 130%;
+    width: 80%;
+}
+#about > div.right p:nth-child(4) {
+    font-size: 115%;
+    width: 70%;
+}
+#about > div.right p:nth-child(5) {
+    font-size: 100%;
+    width: 60%;
+}
+#about > div.right p a {
+    text-decoration: underline;
+}
+#about a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+#about a:hover {
+    color: #ffffff;
+}
+#about dl {
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+#about dt {
+    background: #000000;
+    color: #eeeeee;
+    font-size: 105%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    padding: 5px 15px;
+}
+#about dd {
+    background: #555555;
+    float: left;
+    font-size: 130%;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    padding: 5px 15px;
+}
+#about dd:hover {
+    background: #444444;
+}
+#about h3 {
+    color: #cccccc;
+    display: inline-block;
+    margin: 7% 0 0;
+    text-shadow: 1px 1px 1px #111111;
+    width: 100%;
+}
+#about > p {
+    display: inline-block;
+    padding: 9% 0 0;
+    text-align: center;
+    width: 100%;
+}
+#about .contact {
+    float: left;
+    width: auto;
+}
+#about .contact dd {
+    background: none;
+    font-size: 115%;
+    padding: 5px 0;
+    text-shadow: 1px 1px 1px #222222;
+}
+#about .contact dt {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    display: block;
+    height: 40px;
+    margin: 0 12px 0 7px;
+    padding: 0;
+    text-indent: -9000px;
+    width: 23px;
+}
+#about .contact .email {
+    background-image: url(../images/contact-email.png);
+}
+#about .contact .linkedin {
+    background-image: url(../images/contact-linkedin.png);
+}
+#about .contact .telefone {
+    background-image: url(../images/contact-telefone.png);
+}
+#about .percent dd {
+    padding: 0 2%;
+    text-align: right;
+    text-shadow: 1px 1px 1px #222222;
+}
+#about .percent dt {
+    padding: 0 1%;
+    text-align: center;
+    width: 22%;
+}
+#about .percent10 {
+    width: 5.4%;
+}
+#about .percent20 {
+    width: 12.8%;
+}
+#about .percent30 {
+    width: 20.2%;
+}
+#about .percent40 {
+    width: 27.6%;
+}
+#about .percent50 {
+    width: 35%;
+}
+#about .percent60 {
+    width: 42.4%;
+}
+#about .percent70 {
+    width: 49.8%;
+}
+#about .percent80 {
+    width: 57.2%;
+}
+#about .percent90 {
+    width: 64.6%;
+}
+#about .percent100 {
+    width: 72%;
+}
+#bio-photo {
+    background-image: url(../images/bio.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 138px 138px;
+    border: 1px solid #000000;
+    float: left;
+    height: 138px;
+    margin: 0 10px 0 0;
+    width: 138px;
+}
+#bio-photo div {
+    background: rgba(0, 0, 0, 0.4);
+    height: 138px;
+}
+#bio-photo div:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+.hint--right:after {
+    margin-bottom: -20px !important;
+}
+.hint:after, [data-hint]:after {
+    font-size: 90% !important;
+    padding: 14px 10px !important;
+}
+
+/* Gists */
+#gists {
+    background: #eeeeee;
+    background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: -o-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 100%);
+    color: #666666;
+    padding: 4% 10% 5%;
+}
+#gists a {
+    color: #777777;
+    text-decoration: underline;
+}
+#gists .gists {
+    margin: 40px -0.5% 0;
+    overflow: hidden;
+}
+#gists .gists li {
+    background: #cccccc;
+    float: left;
+    list-style: none;
+    margin: 0.5%;
+    width: 99%;
+}
+#gists .gists li:hover {
+    background: #dddddd;
+}
+#gists .gists li.active {
+    background: #999999;
+}
+#gists .gists li.active > a {
+    color: #ffffff;
+}
+#gists .gists li > a {
+    color: #333333;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+#gists .gist {
+    display: none;
+}
+#gists .gist-file {
+    margin: 0;
+}
+
+/* Portfolio */
+#portfolio {
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 0%, #777777 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #666666), color-stop(100%, #777777));
+    background: -webkit-linear-gradient(top, #666666 0%, #777777 100%);
+    background: -o-linear-gradient(top, #666666 0%, #777777 100%);
+    background: -ms-linear-gradient(top, #666666 0%, #777777 100%);
+    background: linear-gradient(to bottom, #666666 0%, #777777 100%);
+    color: #dddddd;
+    padding: 4% 10%;
+}
+#portfolio .box > div {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    opacity: 0.7;
+    position: relative;
+}
+#portfolio .box > div div {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+#portfolio .box > div div:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #111111;
+    opacity: 1;
+}
+#portfolio .box > div a,
+#portfolio .box > div h3 {
+    border-bottom: 1px solid #666666;
+    display: inline-block;
+    margin: 0 10%;
+    width: 80%;
+}
+#portfolio .box > div a {
+    color: #333333;
+    font-size: 90%;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+}
+#portfolio .box > div a:hover {
+    background: #cccccc;
+}
+#portfolio .box > div a span {
+    font-weight: normal;
+}
+#portfolio .box > div h3 {
+    font-size: 120%;
+    line-height: 20px;
+    padding: 28px 0 10px;
+}
+#portfolio img {
+    box-shadow: 0px 0px 5px #222222;
+    width: 100%;
+}
+#portfolio li {
+    list-style: none;
+}
+#portfolio > p {
+    margin: 0 0 40px;
+}
+
+/* Repositories */
+#repositories {
+    background-attachment: fixed;
+    background-color: #111111;
+    background-image: url(../images/bg-repositories.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100% auto;
+    color: #dddddd;
+}
+#repositories a {
+    color: #bbbbbb;
+    text-decoration: underline;
+}
+#repositories > div {
+    background: rgba(0, 0, 0, 0.7);
+}
+#repositories .box > div div {
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 45px auto;
+    overflow: hidden;
+}
+#repositories .box > div div p {
+    clear: left;
+    color: #888888;
+    float: left;
+    line-height: 20px;
+    padding: 3px 0 8px 60px;
+}
+#repositories h3 {
+    float: left;
+    line-height: 24px;
+    padding: 0 0 0 60px;
+}
+#repositories > p {
+    margin: 0 0 40px;
+}
+#repositories > p a:hover {
+    color: #666666;
+}
+#repositories .box {
+    margin: 3% -2% 0;
+}
+#repositories .boxes {
+    border-bottom: 1px solid #444444;
+    overflow: hidden;
+    margin: 10px 0 0 60px;
+}
+#repositories .boxes li {
+    float: left;
+    font-size: 90%;
+    list-style: none;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+}
+#repositories .boxes li:hover {
+    background: #cccccc;
+}
+#repositories .boxes li a {
+    border-top: 1px solid #444444;
+    color: #cccccc;
+    display: block;
+    line-height: 2.2em;
+    text-align: center;
+    text-decoration: none;
+}
+#repositories .boxes li a:hover {
+    color: #111111;
+}
+#repositories .preview-bluray-dvd-cd-book-collection div {
+    background-image: url(../images/preview-bluray-dvd-cd-book-collection.png);
+}
+#repositories .preview-html-blank-template div {
+    background-image: url(../images/preview-html-blank-template.png);
+}
+#repositories .preview-joomla-3-blank-template div {
+    background-image: url(../images/preview-joomla-3-blank-template.png);
+    background-position: 0 1px;
+}
+
+/* Media-queries */
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    header {
+        background-color: #555555;
+        background-size: auto 100%;  
+    }
+    header > div div {
+        margin: 4% 10% 0;
+        width: 80%;
+    }
+    nav {
+        display: none;
+    }
+    #repositories {
+        background-size: auto 100%;  
+    }
+    #repositories .boxes li a {
+        font-size: 110%;
+    }
+    .boxes > li {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .boxes > li {
+        width: 47.5%;
+    }
+    .boxes > li:nth-child(2n+1) {
+        float: right;
+    }
+}
+@media screen and (max-width: 800px) {
+    header {
+        background-color: #555555;
+        background-size: auto 100%;  
+    }
+    header > div div {
+        float: left;
+        padding: 8% 10% 0;
+        width: 80%;
+    }
+    header p {
+        text-align: left;
+    }
+    nav li a {
+        font-size: 120%;
+    }
+    #about > div.left,
+    #about > div.right {
+        float: left;
+        width: 100%;
+    }
+    #about > div.right h3 {
+        text-align: left;
+    }
+    #about > div.right li {
+        float: left;
+    }
+    #about > div.right p {
+        float: left;
+        font-size: 115% !important;
+        text-align: left;
+        width: 100% !important;
+    }
+    #repositories {
+        background-size: auto 100%;  
+    }
+    #repositories .box {
+        margin: 7% -2% 0;
+    }
+    .box .box3,
+    .box .box4 {
+        width: 46%;
+    }
+}
+@media screen and (max-width: 600px) {
+    header p {
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+    }
+    header p.opacity {
+        opacity: 1;
+    }
+    #portfolio .box > div a span {
+        display: none;
+    }
+    .box .box3,
+    .box .box4 {
+        width: 96%;
+    }
+    .boxes > li {
+        width: 100%;
+    }
+}

@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$("header, header > div").css("height", $(window).height());
 
 	/* Menu */
-	$('nav li:not(.language) a').on('click',function (e) {
+	$('nav li:not(.link) a').on('click',function (e) {
 		$("nav a").removeClass("active");
 		$(this).toggleClass("active");
 	    e.preventDefault();
@@ -29,21 +29,6 @@ $(document).ready(function() {
         } else {
             $("nav").addClass("menufixo");
         }
-    });
-
-	// Gists
-    jQuery(".gists > li > a").click(function() {
-        jQuery(this).parent().find(".gist").animate({
-            height: 'toggle'
-        });
-        jQuery(this).parent().toggleClass("active");
-        var atributo = jQuery(this).attr("title");
-        if (atributo == "Mostrar informações") {
-            jQuery(this).attr("title", "Esconder informações");
-        } else {
-            jQuery(this).attr("title", "Mostrar informações");
-        }
-        return false;
     });
 
 });

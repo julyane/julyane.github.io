@@ -31,6 +31,10 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
 }
+button {
+    background: #c52a2a;
+    padding: 10px 20px;
+}
 code {
     clear: left;
     display: block;
@@ -71,6 +75,9 @@ h3 {
     font-size: 130%;
     font-weight: 300;
     padding: 0 0 20px;
+}
+input {
+    width: 100%;
 }
 pre {
     font-size: 85% !important;
